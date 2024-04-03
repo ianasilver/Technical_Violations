@@ -1,0 +1,87 @@
+
+Call:
+glm(formula = MFTV23 ~ caserate_w12R + php11count12 + jailpop + 
+    as.factor(Interview) + jailpop + income + caseload + Totalpopulation + 
+    IncomingCases_20192020 + ClearanceRate_20192020 + Totalofficers + 
+    popserved + popservedoffense + supertype + as.factor(region), 
+    family = binomial(link = "logit"), data = G_L[which(G_L$region != 
+        4), ], na.action = na.omit)
+
+Coefficients:
+                                 Estimate         Std. Error  z value    Pr(>|z|)    
+(Intercept)            -2.165978247085469  0.864815195227648 -2.50456   0.0122605 *  
+caserate_w12R           0.024342783463206  0.174038661480559  0.13987   0.8887627    
+php11count12            0.058838082292600  0.033434702210626  1.75979   0.0784433 .  
+jailpop                 0.000114877836472  0.000069227934285  1.65941   0.0970323 .  
+as.factor(Interview)2  -1.287221150139437  0.266526483088876 -4.82962 0.000001368 ***
+income                  0.000001626056167  0.000002700884446  0.60205   0.5471436    
+caseload               -0.002922975200875  0.002222751221195 -1.31503   0.1885012    
+Totalpopulation        -0.000006929234571  0.000005716338481 -1.21218   0.2254433    
+IncomingCases_20192020 -0.000000366619232  0.000000135258081 -2.71052   0.0067179 ** 
+ClearanceRate_20192020  0.720213811255554  0.763058890073945  0.94385   0.3452459    
+Totalofficers           0.000481494455668  0.000332425809846  1.44843   0.1474977    
+popserved              -0.064572878909131  0.113283313832230 -0.57001   0.5686694    
+popservedoffense       -0.014506878794918  0.141730394183849 -0.10236   0.9184745    
+supertype              -0.071036015008482  0.130548342327418 -0.54414   0.5863481    
+as.factor(region)1     -0.206415324320429  0.356207968709806 -0.57948   0.5622655    
+as.factor(region)2     -0.354048835811930  0.417705069201645 -0.84760   0.3966581    
+as.factor(region)3      0.116345433485353  0.374943848945519  0.31030   0.7563321    
+as.factor(region)5      0.776381369910981  0.474573570731193  1.63596   0.1018488    
+as.factor(region)6      0.038313129440366  0.328722645906784  0.11655   0.9072154    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 820.5725760  on 1225  degrees of freedom
+Residual deviance: 753.4120879  on 1207  degrees of freedom
+AIC: 791.4120879
+
+Number of Fisher Scoring iterations: 6
+
+                                       2.5 %                97.5 %
+(Intercept)            -3.922682837543261858 -0.520920085711446434
+caserate_w12R          -0.344459107657791086  0.342745137578112424
+php11count12           -0.005873463419592506  0.125476754615526737
+jailpop                -0.000029144333854346  0.000247323711628297
+as.factor(Interview)2  -1.823432194892908198 -0.775688325126510203
+income                 -0.000006114681200600  0.000006265489521594
+caseload               -0.007489759981780141  0.001210385105690840
+Totalpopulation        -0.000021238448027774  0.000002057599270026
+IncomingCases_20192020 -0.000000656091956493 -0.000000123611647157
+ClearanceRate_20192020 -0.729632749265911262  2.271222615588144311
+Totalofficers          -0.000260490200703668  0.001110157940569349
+popserved              -0.287608366419776107  0.157187353492523857
+popservedoffense       -0.301078295423965636  0.256205659482204529
+supertype              -0.331066865131376509  0.181581371225413513
+as.factor(region)1     -0.949048048897848884  0.458684073966030559
+as.factor(region)2     -1.232899432818220564  0.420787615457671127
+as.factor(region)3     -0.670036215860186801  0.813548856147561228
+as.factor(region)5     -0.205251575216441329  1.674111429075466395
+as.factor(region)6     -0.633470826213074489  0.661583254280748490
+           (Intercept)          caserate_w12R           php11count12                jailpop  as.factor(Interview)2                 income               caseload 
+        0.114637735696         1.024641487857         1.060603496350         1.000114884435         0.276036783074         1.000001626057         0.997081292532 
+       Totalpopulation IncomingCases_20192020 ClearanceRate_20192020          Totalofficers              popserved       popservedoffense              supertype 
+        0.999993070789         0.999999633381         2.054872518551         1.000481610393         0.937467790142         0.985597838984         0.931428346124 
+    as.factor(region)1     as.factor(region)2     as.factor(region)3     as.factor(region)5     as.factor(region)6 
+        0.813495141795         0.701840691558         1.123383859519         2.173592589734         1.039056541137 
+                                2.5 %         97.5 %
+(Intercept)            0.019787935651 0.593973789680
+caserate_w12R          0.708603528052 1.408809663525
+php11count12           0.994143751646 1.133688815622
+jailpop                0.999970856091 1.000247354299
+as.factor(Interview)2  0.161470600217 0.460386776124
+income                 0.999993885337 1.000006265509
+caseload               0.992538218377 1.001211117917
+Totalpopulation        0.999978761778 1.000002057601
+IncomingCases_20192020 0.999999343908 0.999999876388
+ClearanceRate_20192020 0.482086004023 9.691242237672
+Totalofficers          0.999739543724 1.001110774394
+popserved              0.750055281561 1.170214837201
+popservedoffense       0.740019830312 1.292018416457
+supertype              0.718157147763 1.199112105961
+as.factor(region)1     0.387109357288 1.581990831736
+as.factor(region)2     0.291446322412 1.523160748255
+as.factor(region)3     0.511690046156 2.255899661018
+as.factor(region)5     0.814442397114 5.334053357953
+as.factor(region)6     0.530746471684 1.937858028894

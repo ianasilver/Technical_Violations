@@ -1,0 +1,90 @@
+     r_tv_w2   1   2   3 Sum
+r_tv                        
+1             53  56  19 128
+2             11  21   8  40
+3              0   0   5   5
+Sum           64  77  32 173
+     r_tv_w3   1   2   3 Sum
+r_tv                        
+1             40  44   4  88
+2              8  17   0  25
+3              0   3   1   4
+Sum           48  64   5 117
+        r_tv_w3   1   2   3 Sum
+r_tv_w2                        
+1                22  15   0  37
+2                14  34   2  50
+3                 6  12   2  20
+Sum              42  61   4 107
+[1] "Wave 1 to Wave 2: Technical Violations"
+
+	Pearson's Chi-squared test
+
+data:  C$r_tv and C$r_tv_w2
+X-squared = 25.24234952, df = 4, p-value = 0.0000449684596
+
+Cramer V 
+  0.2701 
+[1] "Wave 1 to Wave 3: Technical Violations"
+
+	Pearson's Chi-squared test
+
+data:  C$r_tv and C$r_tv_w3
+X-squared = 9.127883523, df = 4, p-value = 0.0579812872
+
+Cramer V 
+  0.1975 
+[1] "Wave 2 to Wave 3: Technical Violations"
+
+	Pearson's Chi-squared test
+
+data:  C$r_tv_w2 and C$r_tv_w3
+X-squared = 12.23906893, df = 4, p-value = 0.0156592713
+
+Cramer V 
+  0.2391 
+      r_rev_w2   1   2   3 Sum
+r_rev                         
+1               56  46  15 117
+2               10  35   2  47
+3                0   4   0   4
+Sum             66  85  17 168
+      r_rev_w3   1   2   3 Sum
+r_rev                         
+1               37  42   3  82
+2                8  26   0  34
+3                0   1   0   1
+Sum             45  69   3 117
+         r_rev_w3   1   2   3 Sum
+r_rev_w2                         
+1                  25  21   0  46
+2                  11  40   2  53
+3                   2   7   0   9
+Sum                38  68   2 108
+[1] "Wave 1 to Wave 2: Revocation Violations"
+
+	Pearson's Chi-squared test
+
+data:  C$r_rev and C$r_rev_w2
+X-squared = 20.65399621, df = 4, p-value = 0.000370814354
+
+Cramer V 
+  0.2479 
+[1] "Wave 1 to Wave 3: Revocation Violations"
+
+	Pearson's Chi-squared test
+
+data:  C$r_rev and C$r_rev_w3
+X-squared = 7.46833011, df = 4, p-value = 0.113113937
+
+Cramer V 
+  0.1787 
+[1] "Wave 2 to Wave 3: Revocation Violations"
+
+	Pearson's Chi-squared test
+
+data:  C$r_rev_w2 and C$r_rev_w3
+X-squared = 14.26289757, df = 4, p-value = 0.00650158247
+
+Cramer V 
+   0.257 
